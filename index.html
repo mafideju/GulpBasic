@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-br" ng-app="App">
 
 <head>
   <meta charset="utf-8">
@@ -8,101 +8,107 @@
   <link rel="stylesheet" href="./dist/css/bootstrap.css">
 </head>
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="#">Gulp</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
-    aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<body ng-controller="indexController">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Gulp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">GulpHouse
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Ligações</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Ativações</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">Serviços</a>
-        <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="#">Bootstrap</a>
-          <a class="dropdown-item" href="#">Material Design</a>
-          <a class="dropdown-item" href="#">Tailwind</a>
-        </div>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Busca</button>
-    </form>
-  </div>
-</nav>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">GulpHouse
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ligações</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ativações</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Serviços</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Bootstrap</a>
+            <a class="dropdown-item" href="#">Material Design</a>
+            <a class="dropdown-item" href="#">Tailwind</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Busca</button>
+      </form>
+    </div>
+  </nav>
 
-<main role="main">
+  <main role="main">
 
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3 mt-5">{{ titulo }}</h1>
+        <p>Gulp é um conjunto de ferramentas que nos permite automatizar tarefas repetitivas no nossso cotidiano de programação.
+          Não perca mais tempo dando voltas em rono da lâmpada e comece a construir algo incrível ainda hoje, enquanto G.U.L.P
+          faz o serviço sujo por você.</p>
+        <p>
+          <a class="btn btn-outline-secondary btn-lg" href="#" role="button">Mais Gulp &raquo;</a>
+        </p>
+      </div>
+    </div>
+
     <div class="container">
-      <h1 class="display-3 mt-5">Gulp Task Running</h1>
-      <p>Gulp é um conjunto de ferramentas que nos permite automatizar tarefas repetitivas no nossso cotidiano de programação.
-        Não perca masi tempo dando voltas em rono da lâmpada e comece a construir algo incrível ainda hoje, enquanto G.U.L.P
-        faz o serviço sujo por você.</p>
-      <p>
-        <a class="btn btn-outline-secondary btn-lg" href="#" role="button">Mais Gulp &raquo;</a>
-      </p>
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4 img-fluid">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+            nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
+            dui.
+          </p>
+          <p>
+            <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
+          </p>
+          <img class="img-fluid" src="./dev/img/clouds.jpg" alt="">
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+            nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
+            dui.
+          </p>
+          <p>
+            <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
+          </p>
+          <img class="img-fluid" src="./dev/img/pexels.jpg" alt="">
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis
+            euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+            sit amet risus.</p>
+          <p>
+            <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
+          </p>
+          <img class="img-fluid" src="./dev/img/forest.jpg" alt="">
+        </div>
+      </div>
+
+      <hr>
+
     </div>
-  </div>
+    <!-- /container -->
 
-  <div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-      <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-          nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-        </p>
-        <p>
-          <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
-        </p>
-      </div>
-      <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-          nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-        </p>
-        <p>
-          <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
-        </p>
-      </div>
-      <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis
-          euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
-          sit amet risus.</p>
-        <p>
-          <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
-        </p>
-      </div>
-    </div>
+  </main>
 
-    <hr>
-
-  </div>
-  <!-- /container -->
-
-</main>
-
-<footer class="container">
-  <p>&copy; Company 2017-2018</p>
-</footer>
-
+  <footer class="container">
+    <p>&copy; Company 2017-2018</p>
+  </footer>
+  <script src="dist/js/lib.js"></script>
+  <script src="dist/js/app.min.js"></script>
 </body>
 
 </html>
